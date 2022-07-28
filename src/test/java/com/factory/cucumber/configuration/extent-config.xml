@@ -11,7 +11,7 @@
 		<protocol>https</protocol>
 
 		<!-- title of the document -->
-		<documentTitle>Free Now Assigment</documentTitle>
+		<documentTitle>Free Now Assignment</documentTitle>
 
 		<!-- report name - displayed at top-nav -->
 		<reportName>BDD Framework Extent Report</reportName>
