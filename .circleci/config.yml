@@ -1,31 +1,33 @@
 version: 2
 jobs:
   build:
-
-    working_directory: ~/restassured-serenity-cucumber
-
+    # specify the version you desire here
     docker:
       - image: circleci/openjdk:8-jdk-stretch
 
-    steps:
+    working_directory: ~/cucumber-rest-assured-extentreports-master
+    environment:
+      # Customize the JVM maximum heap limit
+      MAVEN_OPTS: -Xmx3200m
 
+    steps:
       - checkout
 
       - restore_cache:
 
-          key: restassured-serenity-cucumber-{{ checksum "pom.xml" }}
+          key: cucumber-rest-assured-extentreports-master--{{ checksum "pom.xml" }}
 
       - run: mvn dependency:go-offline # gets the project dependencies
 
       - save_cache:
           paths:
             - ~/.m2
-          key: restassured-serenity-cucumber-{{ checksum "pom.xml" }}
+          key: cucumber-rest-assured-extentreports-master-{{ checksum "pom.xml" }}
 
       - run: mvn clean verify
 
       - store_test_results:
-          path: target/failsafe-reports
+          path: target/generated-test-sources
 
       - store_artifacts:
-          path: target/site/serenity
+          path: target/test-classes
