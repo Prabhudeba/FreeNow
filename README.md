@@ -25,7 +25,8 @@ For each post, fetch the comments and validate if the emails in the comment  sec
 ## Preconditions
 ```bash
 - Maven 
-- Java 8
+- Java 1.8
+-IDE(IntelliJ 2022.* Version)
 - Cucumber IntelliJ plugin
 ```
 
@@ -157,6 +158,17 @@ Scenario Outline: Validate the response code for the users endpoint
       | URL    | ContentType      | RequestBody | RequestMethod | StatusCode |
       | /users | application/json |             | GET           |        200 |
 
+
+**How to start the execution**
+1. First of all we need to open the project on IDE and load maven changes by importing all the dependencies 
+from pom.xml file.
+2.Add the cucumber plugin to the IDE.
+3.Select the Project SDK to 1.8.
+4.Right click on the src/test/java/com/stepdefinitions/RunCucumberTest class.
+5.It will set up the configuration automatically and execution will start.
+
+   
+
 **Extent HTML Test Report**
 	
 	After execution,User can navigate to below URL for HTML test report.
@@ -164,5 +176,18 @@ Scenario Outline: Validate the response code for the users endpoint
 	URL:http://localhost:63342/cucumber-rest-assured-extentreports-master/cucumber-api/src/test/reports/cucumber_report.html?_ijt=emof18cv8vh18bq46vndabe5i5
 	
 
-
+**Reason to choose BDD Framework**
 	
+BDD is framework type which can be easily understandable by tech and non tech team.This is easy beacuse the tests are 
+written in plain text.
+
+The main advantage of BDD is the low jargon and clearer approach which is easier to understand.
+
+I choosed Cucumber-A BDD Framework tool.
+PFB advantages for this framework.
+1.Coverage of User Stories
+2.Clarity of Scenarios
+3.Automation of Test Scenarios
+4.Code Reuse in Framework
+5.Parameterization in Feature File
+
