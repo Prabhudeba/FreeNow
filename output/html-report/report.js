@@ -138,7 +138,7 @@ formatter.match({
   "location": "StepDefinitionsTest.setAPIEndpointURL(String)"
 });
 formatter.result({
-  "duration": 129283000,
+  "duration": 118075500,
   "status": "passed"
 });
 formatter.match({
@@ -151,7 +151,7 @@ formatter.match({
   "location": "StepDefinitionsTest.setHeader(String)"
 });
 formatter.result({
-  "duration": 754100,
+  "duration": 2423300,
   "status": "passed"
 });
 formatter.match({
@@ -168,7 +168,7 @@ formatter.match({
   "location": "StepDefinitionsTest.submitRequest(String,String)"
 });
 formatter.result({
-  "duration": 2481947800,
+  "duration": 2481487400,
   "status": "passed"
 });
 formatter.match({
@@ -181,7 +181,7 @@ formatter.match({
   "location": "StepDefinitionsTest.verifyStatusCode(String)"
 });
 formatter.result({
-  "duration": 4245300,
+  "duration": 3277500,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -308,7 +308,7 @@ formatter.match({
   "location": "StepDefinitionsTest.setAPIEndpointURL(String)"
 });
 formatter.result({
-  "duration": 1315900,
+  "duration": 1660100,
   "status": "passed"
 });
 formatter.match({
@@ -321,7 +321,7 @@ formatter.match({
   "location": "StepDefinitionsTest.setHeader(String)"
 });
 formatter.result({
-  "duration": 1455400,
+  "duration": 1604100,
   "status": "passed"
 });
 formatter.match({
@@ -338,7 +338,7 @@ formatter.match({
   "location": "StepDefinitionsTest.submitRequest(String,String)"
 });
 formatter.result({
-  "duration": 221745400,
+  "duration": 192806600,
   "status": "passed"
 });
 formatter.match({
@@ -351,7 +351,7 @@ formatter.match({
   "location": "StepDefinitionsTest.verifySearchedUserName(String)"
 });
 formatter.result({
-  "duration": 180198300,
+  "duration": 166554300,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -475,7 +475,7 @@ formatter.match({
   "location": "StepDefinitionsTest.setAPIEndpointURL(String)"
 });
 formatter.result({
-  "duration": 2256300,
+  "duration": 1501200,
   "status": "passed"
 });
 formatter.match({
@@ -488,7 +488,7 @@ formatter.match({
   "location": "StepDefinitionsTest.setHeader(String)"
 });
 formatter.result({
-  "duration": 2627300,
+  "duration": 1386700,
   "status": "passed"
 });
 formatter.match({
@@ -505,7 +505,7 @@ formatter.match({
   "location": "StepDefinitionsTest.submitRequest(String,String)"
 });
 formatter.result({
-  "duration": 214566200,
+  "duration": 216463200,
   "status": "passed"
 });
 formatter.match({
@@ -518,7 +518,7 @@ formatter.match({
   "location": "StepDefinitionsTest.getPostID(String)"
 });
 formatter.result({
-  "duration": 358970100,
+  "duration": 428931700,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -642,7 +642,7 @@ formatter.match({
   "location": "StepDefinitionsTest.setAPIEndpointURL(String)"
 });
 formatter.result({
-  "duration": 653500,
+  "duration": 1985400,
   "status": "passed"
 });
 formatter.match({
@@ -655,7 +655,7 @@ formatter.match({
   "location": "StepDefinitionsTest.setHeader(String)"
 });
 formatter.result({
-  "duration": 914700,
+  "duration": 1738000,
   "status": "passed"
 });
 formatter.match({
@@ -672,7 +672,7 @@ formatter.match({
   "location": "StepDefinitionsTest.submitRequest(String,String)"
 });
 formatter.result({
-  "duration": 217450700,
+  "duration": 239190300,
   "status": "passed"
 });
 formatter.match({
@@ -685,7 +685,7 @@ formatter.match({
   "location": "StepDefinitionsTest.getComments(String)"
 });
 formatter.result({
-  "duration": 464470300,
+  "duration": 498539500,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -822,7 +822,7 @@ formatter.match({
   "location": "StepDefinitionsTest.setAPIEndpointURL(String)"
 });
 formatter.result({
-  "duration": 2148900,
+  "duration": 1355300,
   "status": "passed"
 });
 formatter.match({
@@ -835,7 +835,7 @@ formatter.match({
   "location": "StepDefinitionsTest.setHeader(String)"
 });
 formatter.result({
-  "duration": 1361600,
+  "duration": 1086600,
   "status": "passed"
 });
 formatter.match({
@@ -852,7 +852,7 @@ formatter.match({
   "location": "StepDefinitionsTest.submitRequest(String,String)"
 });
 formatter.result({
-  "duration": 162503900,
+  "duration": 211007300,
   "status": "passed"
 });
 formatter.match({
@@ -865,7 +865,7 @@ formatter.match({
   "location": "StepDefinitionsTest.getComments(String)"
 });
 formatter.result({
-  "duration": 407513900,
+  "duration": 532115000,
   "status": "passed"
 });
 formatter.match({
@@ -878,7 +878,7 @@ formatter.match({
   "location": "StepDefinitionsTest.isValidEmailAddress(String)"
 });
 formatter.result({
-  "duration": 716838200,
+  "duration": 587765800,
   "status": "passed"
 });
 });
