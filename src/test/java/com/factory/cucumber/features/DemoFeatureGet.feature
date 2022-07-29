@@ -22,7 +22,7 @@ Feature: GET: Automated Demo Tests
     Then verify the "<searchUserName>" is present on the userlist output
     Examples:
       | URL    | ContentType      | searchUserName | RequestMethod | StatusCode | RequestBody |
-      | /users | application/json | Samantha       | GET           |        200 |      |
+      | /users | application/json | Samantha       | GET           |        200 |         |
   @get
   Scenario Outline:Verify post details written by the user.
     Given I want to set resource URL as "<URL>" to the baseURI
