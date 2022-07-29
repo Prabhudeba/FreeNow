@@ -159,8 +159,10 @@ Scenario Outline: Validate the response code for the users endpoint
 
 **Extent HTML Test Report**
 	
+	After execution,User can navigate to below URL for HTML test report.
+	
 	URL:http://localhost:63342/cucumber-rest-assured-extentreports-master/cucumber-api/src/test/reports/cucumber_report.html?_ijt=emof18cv8vh18bq46vndabe5i5
 	
-	![image](https://user-images.githubusercontent.com/43988838/181689115-3f9eac8c-f5c1-4b23-a4f4-102d07160f0d.png)
+
 
 	
