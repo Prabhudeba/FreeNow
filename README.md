@@ -160,12 +160,12 @@ Scenario Outline: Validate the response code for the users endpoint
 
 
 **How to start the execution**
-1. First of all we need to open the project on IDE and load maven changes by importing all the dependencies 
+- First of all we need to open the project on IDE and load maven changes by importing all the dependencies 
 from pom.xml file.
-2.Add the cucumber plugin to the IDE.
-3.Select the Project SDK to 1.8.
-4.Right click on the src/test/java/com/stepdefinitions/RunCucumberTest class.
-5.It will set up the configuration automatically and execution will start.
+- Add the cucumber plugin to the IDE.
+- Select the Project SDK to 1.8.
+- Right click on the src/test/java/com/stepdefinitions/RunCucumberTest class.
+- It will set up the configuration automatically and execution will start.
 
    
 
