@@ -178,7 +178,7 @@ from pom.xml file.
 
 **Reason to choose BDD Framework**
 	
-BDD is framework type which can be easily understandable by tech and non tech team.This is easy beacuse the tests are 
+BDD is a framework which can be easily understandable by tech and non tech team.This is easy beacuse the tests are 
 written in plain text.
 
 The main advantage of BDD is the low jargon and clearer approach which is easier to understand.
