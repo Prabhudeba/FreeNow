@@ -23,7 +23,6 @@ import io.restassured.specification.RequestSpecification;
 public class StepDefinitionsTest {
     private final static Logger logger = Logger.getLogger(StepDefinitionsTest.class.getName());
     public static String apiEndPointUri;
-    public static String testName;
     public static String CONTENT_TYPE;
     public static String STATUS_CODE;
     public static String FILE_PATH;
@@ -31,15 +30,6 @@ public class StepDefinitionsTest {
     public static String RESPONSEBODY;
     public static Response response;
 
-    @Given("^I want to set URL as \"([^\"]*)\" for test case \"([^\"]*)\"$")
-    public void setAPIEndpointURL(String URL, String testCaseName) {
-        String apiHostName = "https://reqres.in";
-        apiEndPointUri = String.format("%s%s", apiHostName, URL);
-        testName = testCaseName;
-        Reporter.addStepLog(Status.PASS + " :: Cucumber Hostname URL is :: " + apiEndPointUri);
-        logger.info("Cucumber Hostname URL is :: " + apiEndPointUri);
-        logger.info("Cucumber Test case name is :: " + testName);
-    }
 
     @Given("I want to set resource URL as \\\"([^\"]*)\\\" to the baseURI")
     public void setAPIEndpointURL(String URL) {
@@ -98,7 +88,6 @@ public class StepDefinitionsTest {
 
     @Then("^verify the \"([^\"]*)\" is present on the userlist output")
     public static void verifySearchedUserName(String value) throws Throwable {
-
         List<Object> userList = com.jayway.jsonpath.JsonPath.parse(RESPONSEBODY)
                 .read("$.[?(@.username=='" + value + "')].username");
         Reporter.addStepLog("Found the user name on User list output");
