@@ -74,7 +74,7 @@ All below dependencies are compatible.
 <extentreports>
 	<configuration>
 		<!-- report theme --> <!-- standard, dark -->
-		<theme>standard</theme>
+		<theme>dark</theme>
 
 		<!-- document encoding -->  <!-- defaults to UTF-8 -->
 		<encoding>UTF-8</encoding>
@@ -83,10 +83,10 @@ All below dependencies are compatible.
 		<protocol>https</protocol>
 
 		<!-- title of the document -->
-		<documentTitle>Cucumber Framework</documentTitle>
+		<documentTitle>Free Now Assignment</documentTitle>
 
 		<!-- report name - displayed at top-nav -->
-		<reportName>Cucumber Extent Report</reportName>
+		<reportName>BDD Framework Extent Report</reportName>
 
 		<!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
 		<dateFormat>yyyy-MM-dd</dateFormat>
@@ -114,7 +114,9 @@ All below dependencies are compatible.
 ```
 
 - create a runner class for cucumber project
+
 - Run with tags. Here I have added @get tags.
+
 ```java
 import java.io.File;
 
@@ -143,15 +145,13 @@ public class RunCucumberTest {
 }
 ```
 ## Add_features_and_respective_step_definitions
-Feature: GET: Automated Demo Tests
-Description: GET: purpose of this feature is to test some demo app.
 
 @get
-Scenario Outline: GET: Validate the response code for the users endpoint
-Given I want to set resource URL as "<URL>" to the baseURI
-When I set header content type as "<ContentType>"
-When I hit the API with requestbody "<RequestBody>" and request method is "<RequestMethod>"
-Then I try to verify the status code is "<StatusCode>"
+Scenario Outline: Validate the response code for the users endpoint
+    Given I want to set resource URL as "<URL>" to the baseURI
+    When I set header content type as "<ContentType>"
+    When I hit the API with requestbody "<RequestBody>" and request method is "<RequestMethod>"
+    Then I try to verify the status code is "<StatusCode>"
 
     Examples: 
       | URL    | ContentType      | RequestBody | RequestMethod | StatusCode |
