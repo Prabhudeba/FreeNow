@@ -125,9 +125,12 @@ public class StepDefinitionsTest {
         System.out.println(fetchPostIds);
         Integer[] postIds = fetchPostIds.toArray(new Integer[0]);
         System.out.println(postIds);
-        Reporter.addStepLog("Post details for " + userID + " = " + String.valueOf(postIds));
+        for (Integer id : postIds) {
+            Reporter.addStepLog("************************************");
+            Reporter.addStepLog("Post id for user id " + userID + " = " + String.valueOf(id));
+            Reporter.addStepLog("************************************");
+        }
         return postIds;
-
     }
 
     @Then("^Retrive comments for the each posts \"([^\"]*)\"$")
@@ -143,7 +146,9 @@ public class StepDefinitionsTest {
         }
         //Printing all the comments
         for (String comment : postsList) {
-            Reporter.addStepLog(String.valueOf(comment));
+            Reporter.addStepLog("************************************");
+            Reporter.addStepLog("Comments by the user= "+ String.valueOf(comment));
+            Reporter.addStepLog("************************************");
         }
         return postsList;
     }
@@ -175,9 +180,9 @@ public class StepDefinitionsTest {
             for (Object emailID : email) {
                 System.out.println("Object Value is:" + emailID);
                 emailValidationResult = pattern.matcher((CharSequence) emailID).matches();
-                Reporter.addStepLog("Given Email address" + emailID + " for user id " + id + " is in regular format");
+                Reporter.addStepLog("Email address " + emailID + " for post id " + id + " is in regular format");
                 if (!emailValidationResult) {
-                    Reporter.addStepLog("Given Email address" + emailID + " for user id " + id + " is not in regular format");
+                    Reporter.addStepLog("Email address " + emailID + " for post id " + id + " is not in regular format");
 
                 }
             }

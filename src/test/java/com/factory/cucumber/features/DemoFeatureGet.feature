@@ -10,12 +10,12 @@ Feature: GET: Automated Demo Tests
     When I hit the API with requestbody "<RequestBody>" and request method is "<RequestMethod>"
     Then I try to verify the status code is "<StatusCode>"
 
-    Examples: 
+    Examples:
       | URL    | ContentType      | RequestBody | RequestMethod | StatusCode |
       | /users | application/json |             | GET           |        200 |
 
   @get
-  Scenario Outline:Validate the searched user name is present.
+  Scenario Outline:Validate the searched user name is present on user list
     Given I want to set resource URL as "<URL>" to the baseURI
     When I set header content type as "<ContentType>"
     When I hit the API with requestbody "<RequestBody>" and request method is "<RequestMethod>"
@@ -52,5 +52,5 @@ Feature: GET: Automated Demo Tests
     Then Retrive comments for the each posts "<username>"
     Then verify the emails in the comments section for user "<username>" is in proper format
     Examples:
-      | URL    | ContentType      | username | RequestMethod | StatusCode |
+      | URL       | ContentType      | username | RequestMethod | StatusCode |
       | /comments | application/json | Samantha | GET           |        200 |
