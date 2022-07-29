@@ -82,7 +82,7 @@ public class StepDefinitionsTest {
         STATUS_CODE = String.valueOf(response.getStatusCode());
         RESPONSEBODY = response.getBody().asString();
         Reporter.addStepLog(Status.PASS + " :: Request successfully processed");
-        Reporter.addStepLog("Response is :: " + RESPONSEBODY);
+
     }
 
 
